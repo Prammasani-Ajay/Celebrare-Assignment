@@ -1,0 +1,61 @@
+main{
+    background-image: url("./Assets/elena-joland--4nhJnfF7W0-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-bottom:22rem;
+}
+.textContent{
+    width: 300px;
+    text-align: justify;
+    line-height: 25px;
+    cursor: pointer;
+    transform: translate(-10rem,20rem);
+}
+dialog::backdrop {
+    background-color:rgba(0, 0, 0, 0.575);
+    opacity: 0.75;
+}
+dialog{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 50px;
+    border-color: #ffffff;
+}
+select{
+    width: 20rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+[type="number"]{
+    width:298px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#AddTextOpt{
+    cursor: pointer;
+    width: 8rem;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #4949ff;
+    font-size: 17px;
+    border: 3px solid #ffffff;
+}
+[type="submit"]{
+    width: 20rem;
+    font-size: 17px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgb(255, 33, 107);
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+.newTextSection{
+    width: 300px;
+    padding: 5px;
+    font-size: 17px
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carattere&family=DM+Sans:opsz,wght@9..40,600&family=Dancing+Script:wght@700&family=Roboto+Mono:ital,wght@1,500&family=Roboto:wght@500&family=Sevillana&family=Single+Day&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Text-Edition</title>
+</head>
+<body>
+    <main>
+        <h1 class="textContent">Click On Text: </h1>
+        <p class="textContent" id="movingText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        
+            <dialog class="form1">
+                <form action="">
+                    <label for=""><b>Apply Changes On Text !</b></label><br><br><br>
+                    <select name="fontNames" id="fontsSelected" required>
+                        <option value="">-- Select Fonts --</option>
+                        <option value="'Roboto Mono', monospace;">Roboto Mono monospace</option>
+                        <option value="'Sevillana', cursive;">Sevillana</option>
+                        <option value="'Single Day', cursive;">Single Day</option>
+                        <option value="'Bebas Neue', sans-serif;">Bebas Neue</option>
+                        <option value="'Carattere', cursive;">Carattere</option>
+                        <option value="'Dancing Script', cursive;">Dancing Script</option>
+                        <option value="'Smooch', cursive;">Smooch</option>
+                    </select><br> <br>
+                    <input type="number" name="size" placeholder="Font Size" id="fontSize"><br> <br>
+                    <select name="fontNames" id="selectedColor" >
+                        <option value="">-- Select Text Color --</option>
+                        <option value="blue">Blue</option>
+                        <option value="darkgreen">Green</option>
+                        <option value="red">Red</option>
+                        <option value="magenta">Magenta</option>
+                        <option value="darkviolet">Violet</option>
+                        <option value="darkorange">Orange</option>
+                    </select><br><br><br>
+                    <input type="submit" name="submit" value="SUBMIT" id="submitbtn">
+                </form>
+                <br><br><br><br>
+                <label for="">Click Here to add New Text -</label>
+                <button id="AddTextOpt">  Add Text </button>​
+            </dialog>
+            <dialog class="addTextField">
+                <form action="">
+                    <textarea name="Text" class="newTextSection"></textarea><br><br>
+                    <input type="submit" class="submitNewTextBtn" >
+                </form>
+            </dialog>
+    </main>
+    <script src="./scriptFile.js"></script>
+</body>
+</html>
